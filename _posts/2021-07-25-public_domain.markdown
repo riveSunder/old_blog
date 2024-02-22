@@ -69,7 +69,7 @@ Illustration of the role of model and dataset size in deep learning.
 <img width="75%" src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/convolution.jpg">
 <br>	
 </div>
-Convolution. [png](link https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/convolution.png)
+Convolution. [png](https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/convolution.png)
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
