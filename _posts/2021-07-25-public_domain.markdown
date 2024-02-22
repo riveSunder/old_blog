@@ -38,7 +38,7 @@ Illustation of dot-product attention.
 <img width="75%" src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/attention_example.jpg">
 <br>	
 </div>
-Example of attention used on the edges of a graph. [png]({{ site.baseurl }}{% link https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/attention_example.png %})
+Example of attention used on the edges of a graph. [png](https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/attention_example.png)
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 <br>	
@@ -69,7 +69,7 @@ Illustration of the role of model and dataset size in deep learning.
 <img width="75%" src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/convolution.jpg">
 <br>	
 </div>
-Convolution. [png]({{ site.baseurl }}{% link https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/convolution.png %})
+Convolution. [png](link https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/convolution.png)
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
@@ -106,7 +106,7 @@ Cartoon diagram of a U-Net style convolutional neural network.
 <br>	
 </div>
 
-Convolution as element-wise multiplication in the Fourier domain. [png]({{ site.baseurl }}{% link https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/conv_Fmatrix_multi.png %}) 
+Convolution as element-wise multiplication in the Fourier domain. [png](https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/conv_Fmatrix_multi.png) 
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
@@ -133,7 +133,7 @@ Illustation of "deep double descent."
 <img width="75%" src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/overfitting.jpg">
 <br>	
 </div>
-Overfitting. [png]({{ site.baseurl }}{% link https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/overfitting.png %})
+Overfitting. [png](https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/overfitting.png)
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
@@ -144,7 +144,7 @@ Overfitting. [png]({{ site.baseurl }}{% link https://raw.githubusercontent.com/r
 <img width="75%" src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/graph_adjacency_matrix.jpg">
 <br>	
 </div>
-A graph and its adjacency matrix. [png]({{ site.baseurl }}{% link https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/graph_adjacency_matrix.png %})
+A graph and its adjacency matrix. [png](https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/graph_adjacency_matrix.png)
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
@@ -153,7 +153,7 @@ A graph and its adjacency matrix. [png]({{ site.baseurl }}{% link https://raw.gi
 <img width="75%" src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/gcn_matrix_multi.jpg">
 <br>	
 </div>
-Arranging graph convolutions as matrix multiplication. [png]({{ site.baseurl }}{% link https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/gcn_matrix_multi.png %})
+Arranging graph convolutions as matrix multiplication. [png](https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/gcn_matrix_multi.png )
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
@@ -176,7 +176,7 @@ Cartoon illustrating word relationships in vector space (_e.g._ word vectors, wo
 <img width="75%" src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/switch_encoder.jpg">
 <br>	
 </div>
-Illustation of a switch encoder layer. [png]({{ site.baseurl }}{% link https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/switch_encoder.png %})
+Illustation of a switch encoder layer. [png](https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/switch_encoder.png )
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
@@ -185,7 +185,7 @@ Illustation of a switch encoder layer. [png]({{ site.baseurl }}{% link https://r
 <img width="75%" src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/transformer_attention.jpg">
 <br>	
 </div>
-illustation of dot-product attention, used in transformers. [png]({{ site.baseurl }}{% link https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/transformer_attention.png %})
+illustation of dot-product attention, used in transformers. [png](https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/public_domain/transformer_attention.png )
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
