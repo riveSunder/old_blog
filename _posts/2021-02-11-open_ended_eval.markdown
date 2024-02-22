@@ -7,7 +7,7 @@ categories: cellular_automata carle
 
 <br>
 <div align="center">
-<img width="100%" src="/assets/carle/use_this.png">
+<img width="100%" src="/old_blog/assets/carle/use_this.png">
 </div>
 <br>
 
@@ -32,7 +32,7 @@ In the following comparison of a scene generated with random inputs for two diff
 
 <br>
 <div align="center">
-<img width="80%" src="/assets/carle/boring_vs_cool.png">
+<img width="80%" src="/old_blog/assets/carle/boring_vs_cool.png">
 </div>
 <br>
 You may want to zoom in to get a good feel for each output, although aliasing of small features in a scaled down render can be interesting in their own right. 
@@ -45,7 +45,7 @@ Here's a pattern produced by another ruleset with some similarities to Maze:
 
 <br>
 <div align="center">
-<img width="80%" src="/assets/carle/coral_accumulation.jpg">
+<img width="80%" src="/old_blog/assets/carle/coral_accumulation.jpg">
 </div>
 <br>
 
@@ -55,7 +55,7 @@ There's an interesting feature in the coral-ish ruleset image, one that contrast
 
 <br>
 <div align="center">
-<img width="80%" src="/assets/carle/giants_causeway.jpg">
+<img width="80%" src="/old_blog/assets/carle/giants_causeway.jpg">
 <br>
 <em>Giant's Causeway in Northern Ireland. Image CC BY SA Wikipedia user <a href="https://commons.wikimedia.org/wiki/User:Sebd">Sebd</a></em>
 </div>
@@ -65,7 +65,7 @@ Regular formations like that are more common than one might naively expect (if y
 
 <br>
 <div align="center">
-<img width="80%" src="/assets/carle/coral_ladder_seed.png">
+<img width="80%" src="/old_blog/assets/carle/coral_ladder_seed.png">
 <br>
 <em>Coral ladder seed. We'll pay some homage to the story of John H. Conway coming up with the Game of Life on a breakroom Go board to illustrate machines in Life-like CA. </em>
 </div>
@@ -75,7 +75,7 @@ When subjected to updates according to the modified Coral ruleset, we see the la
 
 <br>
 <div align="center">
-<img width="80%" src="/assets/carle/coral_ladder.gif">
+<img width="80%" src="/old_blog/assets/carle/coral_ladder.gif">
 </div>
 <br>
 
@@ -83,8 +83,8 @@ Although Coral and the modified ruleset shown here is very different from John C
 
 <br>
 <div align="center">
-<img width="80%" src="/assets/carle/life_glider.png">
-<img width="80%" src="/assets/carle/life_glider.gif">
+<img width="80%" src="/old_blog/assets/carle/life_glider.png">
+<img width="80%" src="/old_blog/assets/carle/life_glider.gif">
 </div>
 <br>
 
@@ -106,7 +106,7 @@ If you're thinking of entering Carle's Game for IEEE CoG 2021 and/or have ideas 
 
 <br>
 <div align="center">
-<img src="/assets/carle/cool_b3s23.png" width="100%">
+<img src="/old_blog/assets/carle/cool_b3s23.png" width="100%">
 </div>
 <br>
 

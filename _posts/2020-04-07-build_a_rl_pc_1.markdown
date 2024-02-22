@@ -7,7 +7,7 @@ categories: RL
 
 ---
 <div align="center">
-<a href="/assets/build_a_rl_pc/M77Halpha_HubbleSchmidt_2290_Pielisafern.png"> <img src="/assets/build_a_rl_pc/M77Halpha_HubbleSchmidt_2290_Pielisafern_med.jpg" title="If you wish to make an apple pie from scratch, first you must invent the universe."></a>
+<a href="/old_blog/assets/build_a_rl_pc/M77Halpha_HubbleSchmidt_2290_Pielisafern.png"> <img src="/assets/build_a_rl_pc/M77Halpha_HubbleSchmidt_2290_Pielisafern_med.jpg" title="If you wish to make an apple pie from scratch, first you must invent the universe."></a>
 <em> Mashup of images from <a href="https://nasa.gov">NASA</a>/<a href="https://mobile.twitter.com/SpaceGeck">Judy</a> <a href="https://geckzilla.com">Schmidt</a> (found on <a href="https://apod.nasa.gov/apod/ap200317.html">apod</a>) and Wikipedia contributor <a href="https://commons.wikimedia.org/wiki/User:Lisafern">Lisafern</a>(<a href="https://commons.wikimedia.org/wiki/File:Fruit_Pie.jpg">image</a>).</em>
 </div>
 <br>
@@ -52,7 +52,7 @@ Even though reinforcement learning has seen major breakthroughs in the past deca
 
 If you want to run experiments with multicore workloads, the cost advantage of a physical workstation over cloud-based virtual machines is undeniable. I built a deep reinforcement learning system based on the 3rd generation Ryzen 3960X Threadripper which handily outperforms n1-highcpu instances with 64 vCPUs on Google Compute Engine in my benchmarks (coming soon to a follow-up post near you!). Based on this build, the cost comparison is shown below. 
 
-<img src="/assets/build_a_rl_pc/gcp_vs_3960x.png">
+<img src="/old_blog/assets/build_a_rl_pc/gcp_vs_3960x.png">
 
 The break-even point is about two months against on-demand Google Compute Engine instances (n1-high-cpu with 64 vCPUs vs the more expensive price list below). If you look at the figure, there's quite a big gap in the cost of running the GCE instances versus a purpose-driven self-built machine over the course of a year of use, and I'll cut through the suspense to tell you the difference is more than $15,000. That might sound like an overestimate, but in my benchmarks the 3960X build is almost twice as fast as a n1-highcpu-64 instance, so it's __actually probably an underestimate__. The figure is based on usage time, not total time elapsed, so if you spend a significant amount of time iterating and building during the day, and regularly run experiments over nights and weekends, I would be surprised if you don't break even before 4 months and save thousands of dollars in the first year, wall time. 
 
@@ -64,7 +64,7 @@ If your interest is piqued, and I hope that it is, I've put together a couple of
 ## Picking Parts 
 <br>
 <div align="center">
-<img src="/assets/build_a_rl_pc/threadripper.jpg" title="fast cpu">
+<img src="/old_blog/assets/build_a_rl_pc/threadripper.jpg" title="fast cpu">
 </div>
 <br>
 ### Souped-up, yet sane
@@ -124,7 +124,7 @@ My first impressions are of a very capable build. I've ran a few training flows 
 <a name="foot2"></a>\*\* Keyboard Repairs
 <br>
 <div align="center">
-<img src="/assets/build_a_rl_pc/bad_keyboard_no_warranty.jpg">
+<img src="/old_blog/assets/build_a_rl_pc/bad_keyboard_no_warranty.jpg">
 </div>
 <br>
 After a bit of reading, I was excited to settle on a ~$120 mechanical keyboard from Das Keyboard with Gamma Zulu (similar to Cherry Mx Brown) switches. Be aware, I had major problems with this keyboad. Some short minutes after receiving the keyboard I pulled it out of the box and plugged it into my laptop (the RL box wasn’t built yet), and began typing away. The keyboard has a firm tactile and auditory feedback that leaves no doubt in one’s mind that you are, in fact, typing. But this one was defective, as it soon become obvious that the c and d keys were not responding. I fired up `xev` and confirmed that, yep, no signal was making it from the keyboard through the USB when I pressed those keys normally. I did find that if I pressed the d key really, really hard it would respond, but had no such luck on the c key.  
@@ -135,7 +135,7 @@ I decided to void the warranty and popped the keyboard open, peeling away the �
 
 <br>
 <div align="center">
-    <img src="/assets/build_a_rl_pc/keyboard_repair.jpg">
+    <img src="/old_blog/assets/build_a_rl_pc/keyboard_repair.jpg">
 </div>
 <br>
 Now that the keys work this is a great keyboard. 

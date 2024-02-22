@@ -47,7 +47,7 @@ Even though reinforcement learning has seen major breakthroughs in the past deca
 
 If you want to run experiments with multicore workloads, the cost advantage of a physical workstation over cloud-based virtual machines is undeniable. I built a deep reinforcement learning system based on the 3rd generation Ryzen 3960X Threadripper which handily outperforms n1-highcpu instances with 64 vCPUs on Google Compute Engine in my benchmarks (coming soon to a subsequent post near you!). Based on this build, the cost comparison is shown below. 
 
-<img src="/assets/build_a_rl_pc/gcp_vs_3960X.png">
+<img src="/old_blog/assets/build_a_rl_pc/gcp_vs_3960X.png">
 
 The break-even point for the more expensive parts list below is about two months against on-demand Google Compute Engine instances (n1-high-cpu with 64 vCPUs). If you look at the figure, there's quite a big gap in the cost of running the GCE instances versus a purpose-driven self-built machine over the course of a year of use. That's more than $15,000.00. That might sound like an overestimate, but actually in my benchmarks the 3960X build is almost twice as fast as a n1-highcpu-64 instance, so it's _actually probably an underestimate._The figure is baed on usage time, not total time elapsed, so if you spend a significant amount of time iterating and building during the day, and regularly run experiments over nights and weekends, I would be surprised if you don't break even before 4 months and save thousands of dollars in the first year, wall time. 
 

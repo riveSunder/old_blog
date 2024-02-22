@@ -10,7 +10,7 @@ categories: public_domain
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/ca_brain.png">
+<img width="75%" src="/old_blog/assets/public_domain/ca_brain.png">
 <br>	
 </div>
 Brain-shaped silhouette in cellular automata patterns. 
@@ -24,7 +24,7 @@ This page is a collection of images and diagrams I've made to illustrate various
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/attention_detail.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/attention_detail.jpg">
 <br>	
 </div>
 Illustation of dot-product attention.
@@ -35,17 +35,17 @@ Illustation of dot-product attention.
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/attention_example.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/attention_example.jpg">
 <br>	
 </div>
-Example of attention used on the edges of a graph. [png]({{ site.baseurl }}{% link /assets/public_domain/attention_example.png %})
+Example of attention used on the edges of a graph. [png]({{ site.baseurl }}{% link /old_blog/assets/public_domain/attention_example.png %})
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 <br>	
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/attention_layer.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/attention_layer.jpg">
 <br>	
 </div>
 Illustation of attention encoder layer.
@@ -57,7 +57,7 @@ Illustation of attention encoder layer.
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/bigsmall_models.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/bigsmall_models.jpg">
 <br>	
 </div>
 Illustration of the role of model and dataset size in deep learning.
@@ -66,16 +66,16 @@ Illustration of the role of model and dataset size in deep learning.
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/convolution.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/convolution.jpg">
 <br>	
 </div>
-Convolution. [png]({{ site.baseurl }}{% link /assets/public_domain/convolution.png %})
+Convolution. [png]({{ site.baseurl }}{% link /old_blog/assets/public_domain/convolution.png %})
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/convolution_transinvariance.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/convolution_transinvariance.jpg">
 <br>	
 </div>
 Cartoon of translation invariance in convolution.
@@ -84,7 +84,7 @@ Cartoon of translation invariance in convolution.
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/atrous1.png">
+<img width="75%" src="/old_blog/assets/public_domain/atrous1.png">
 <br>	
 </div>
 Cartoon diagram of a fully convolutional network and a conv-net with atrous convolutions
@@ -93,7 +93,7 @@ Cartoon diagram of a fully convolutional network and a conv-net with atrous conv
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/unet1.png">
+<img width="75%" src="/old_blog/assets/public_domain/unet1.png">
 <br>	
 </div>
 Cartoon diagram of a U-Net style convolutional neural network.
@@ -102,17 +102,17 @@ Cartoon diagram of a U-Net style convolutional neural network.
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/conv_Fmatrix_multi.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/conv_Fmatrix_multi.jpg">
 <br>	
 </div>
 
-Convolution as element-wise multiplication in the Fourier domain. [png]({{ site.baseurl }}{% link /assets/public_domain/conv_Fmatrix_multi.png %}) 
+Convolution as element-wise multiplication in the Fourier domain. [png]({{ site.baseurl }}{% link /old_blog/assets/public_domain/conv_Fmatrix_multi.png %}) 
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/mlp_simple.png">
+<img width="75%" src="/old_blog/assets/public_domain/mlp_simple.png">
 <br>	
 </div>
 Shallow multilayer perceptron. 
@@ -121,7 +121,7 @@ Shallow multilayer perceptron.
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/double_descent.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/double_descent.jpg">
 <br>	
 </div>
 Illustation of "deep double descent."
@@ -130,10 +130,10 @@ Illustation of "deep double descent."
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/overfitting.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/overfitting.jpg">
 <br>	
 </div>
-Overfitting. [png]({{ site.baseurl }}{% link /assets/public_domain/overfitting.png %})
+Overfitting. [png]({{ site.baseurl }}{% link /old_blog/assets/public_domain/overfitting.png %})
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
@@ -141,19 +141,19 @@ Overfitting. [png]({{ site.baseurl }}{% link /assets/public_domain/overfitting.p
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/graph_adjacency_matrix.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/graph_adjacency_matrix.jpg">
 <br>	
 </div>
-A graph and its adjacency matrix. [png]({{ site.baseurl }}{% link /assets/public_domain/graph_adjacency_matrix.png %})
+A graph and its adjacency matrix. [png]({{ site.baseurl }}{% link /old_blog/assets/public_domain/graph_adjacency_matrix.png %})
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/gcn_matrix_multi.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/gcn_matrix_multi.jpg">
 <br>	
 </div>
-Arranging graph convolutions as matrix multiplication. [png]({{ site.baseurl }}{% link /assets/public_domain/gcn_matrix_multi.png %})
+Arranging graph convolutions as matrix multiplication. [png]({{ site.baseurl }}{% link /old_blog/assets/public_domain/gcn_matrix_multi.png %})
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
@@ -162,7 +162,7 @@ Arranging graph convolutions as matrix multiplication. [png]({{ site.baseurl }}{
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/word_vectors.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/word_vectors.jpg">
 <br>	
 </div>
 Cartoon illustrating word relationships in vector space (_e.g._ word vectors, word2vec).
@@ -173,19 +173,19 @@ Cartoon illustrating word relationships in vector space (_e.g._ word vectors, wo
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/switch_encoder.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/switch_encoder.jpg">
 <br>	
 </div>
-Illustation of a switch encoder layer. [png]({{ site.baseurl }}{% link /assets/public_domain/switch_encoder.png %})
+Illustation of a switch encoder layer. [png]({{ site.baseurl }}{% link /old_blog/assets/public_domain/switch_encoder.png %})
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/transformer_attention.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/transformer_attention.jpg">
 <br>	
 </div>
-illustation of dot-product attention, used in transformers. [png]({{ site.baseurl }}{% link /assets/public_domain/transformer_attention.png %})
+illustation of dot-product attention, used in transformers. [png]({{ site.baseurl }}{% link /old_blog/assets/public_domain/transformer_attention.png %})
 {: style="color:black; font-size: 95%; text-align: center;"}
 <br>	
 
@@ -193,7 +193,7 @@ illustation of dot-product attention, used in transformers. [png]({{ site.baseur
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/cas9_grna.png">
+<img width="75%" src="/old_blog/assets/public_domain/cas9_grna.png">
 </div>
 <br>	
 <em> Cas9 protein with guide RNA, based on PDB structure <a href="https://www.rcsb.org/structure/4OO8">4OO8</a>
@@ -201,14 +201,14 @@ illustation of dot-product attention, used in transformers. [png]({{ site.baseur
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/levinthal.png">
+<img width="75%" src="/old_blog/assets/public_domain/levinthal.png">
 </div>
 <br>
 <em> Cartoon illustration of <a href="https://en.wikipedia.org/wiki/Levinthal%27s_paradox">Levinthal's paradox</a> </em>
 
 <br>
 <div align="center">
-<img width="75%" src="/assets/public_domain/msa.jpg">
+<img width="75%" src="/old_blog/assets/public_domain/msa.jpg">
 </div>
 <br>	
 <em> Cartoon representation of <a href="https://en.wikipedia.org/wiki/Multiple_sequence_alignment">multiple sequence alignment</a> in bioinformatics. </em>
