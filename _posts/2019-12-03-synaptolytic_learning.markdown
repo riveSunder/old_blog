@@ -6,9 +6,9 @@ categories: RL
 ---
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/cartpole_mk1_champion.gif"> 
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/cartpole_mk1_champion.gif"> 
 <br>
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/champion_lineup.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/champion_lineup.png">
 <br>
 </div>
 <div align="center">Comparison of champion policy networks for solving the cartpole-esque `InvertedPendulum` PyBullet environment. The 7-weight network on the left was trained using the mk1 pruning algorithm described in this article, while the network on the left is the result of a covariance matrix adaptation evolution strategy. </div>
@@ -44,10 +44,10 @@ I used the [PyBullet](https://pybullet.org/) versions of cartpole balancing and 
 I compared 2 variants of the learning by pruning scheme. The first variant (mk1) is a genetic algorithm that randomly removes connections in the policy network to form a population of agents that are then tested on the task at hand for multiple episodes. The training procedure retains the elite 1/8 of the population from the last generation, the all-time best 1/8, and the all-time best single policy, and these policies are inherited as the starting point for the next generation, which is then mutated stochastically where the only mutation availabe is the removal of connections. The mutation rate is adaptive, but I did not investigate in-depth whether the adaptation mechanism provided any benefit over a set rate. At every generation, the probability of removing any given connection is determined as the standard deviation mean square difference between the average number of connections in the general population of policy networks and the average number of connections in the elite population:
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/mk1_mutate.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/mk1_mutate.png">
 </div>
 
-Where <img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/mu_theta.png"> is the mean number of connections in the general population, <img src="/assets/synaptolysis/theta_k.png"> are the parameters for each elite policy <img src="/assets/synaptolysis/k.png">, and <img src="/assets/synaptolysis/K.png"> is the total number of elite agents. The mutation rate is clipped etween 0.1% and 12.5%.
+Where <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/mu_theta.png"> is the mean number of connections in the general population, <img src="/assets/synaptolysis/theta_k.png"> are the parameters for each elite policy <img src="/assets/synaptolysis/k.png">, and <img src="/assets/synaptolysis/K.png"> is the total number of elite agents. The mutation rate is clipped etween 0.1% and 12.5%.
 
 Genetic algorithms often incorporate recombination, where parameters from two or more parents may be swapped to produce variable offspring before mutations are applied. In this iteration of the pruning methods described here no recombination was applied, in part because of the extremely simple single-hidden layer architecture of the networks investigated in this experiment. Another reason I wanted to avoid using recombination was to experiment with purely destructive learning algorithms: a deleterious synaptic loss cannot be recovered for a given agent and it's offspring, although it may be supplanted by the fitter progeny of competing policies retaining the lost connection. I deviate from the purely destructive learning algorith in the second version of the pruning-based learning algorithm. 
 
@@ -60,12 +60,12 @@ I implemented a naive covariance matrix adaptation evolution strategy (CMA-ES or
 A covariance matrix is used to define a distribution from which parameters are sampled at each generation. The mean and covariance for each weight is computed as follows:
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/mu_ij.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/mu_ij.png">
 <BR>
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/sigma_ijkl.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/sigma_ijkl.png">
 </div>
 
-Where <img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/mu.png"> is the mean value for a given weight, <img src="/assets/synaptolysis/theta.png"> is the weight value, and <img src="/assets/synaptolysis/sigma.png"> is the covariance. Subscripts define the connections, for example between nodes <em>i</em> and <em>j</em> and as implied by these subscripts, computing the covariance matrix involves one and two loops wrapping the mean and covariance equations above, respectively.  
+Where <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/mu.png"> is the mean value for a given weight, <img src="/assets/synaptolysis/theta.png"> is the weight value, and <img src="/assets/synaptolysis/sigma.png"> is the covariance. Subscripts define the connections, for example between nodes <em>i</em> and <em>j</em> and as implied by these subscripts, computing the covariance matrix involves one and two loops wrapping the mean and covariance equations above, respectively.  
 
 ### Shared Characteristics of all Policies
 
@@ -74,10 +74,10 @@ All policies have a single hidden layer with 32 nodes and use tanh activation. T
 ## Results
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/swingup_champion_mk2_agent0.gif">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/swingup_champion_mk2_agent0.gif">
 <p align="center"><em>Example episode demonstrating the performance of the mk2 pruning algorithm champion network. </em></p>
 <br>
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/swingup_champion_lineup.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/swingup_champion_lineup.png">
 </div>
 
 
@@ -90,9 +90,9 @@ In this initial experiment I focused on finding solutions to each task, truncati
 The mk1 algorithm tends to do a better job of simplifying connections, finding a solution to the balancing task with only 7 connections. Without individually optimizing hyperparameters for each algorithm it's not clear if the mk1 method is intrinsically better at finding a more efficient policy, if the mk2 method intrinsically has trouble overcoming local optima to find more efficient policies, or if they'll both find similarly simple solutions eventually. 
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/pruning_mk1_cartpole_s2.png">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/pruning_mk2_cartpole_s2.png">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/cmaes_cartpole_s2.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/pruning_mk1_cartpole_s2.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/pruning_mk2_cartpole_s2.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/cmaes_cartpole_s2.png">
 </div>
 <p align="center">All 3 methods solve the balancing task pretty quickly.</p>
 
@@ -105,9 +105,9 @@ The mk1 algorithm tends to do a better job of simplifying connections, finding a
 <p align="center"><strong>Table 1:</strong> Learning performance on `InvertedPendulum` pole-balancing task. As evident in the "Best agent final performance" column, this task is too easy to be interesting in this context. Of the methods tested the mk1 algorithm found the simplest network that solves the problem.</p>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/pruning_mk1_swingup_s2.png">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/pruning_mk2_swingup_s2.png">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/cmaes_swingup_s2.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/pruning_mk1_swingup_s2.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/pruning_mk2_swingup_s2.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/cmaes_swingup_s2.png">
 </div>
 
 | Method | Total steps to solve | Best agent final performance |
@@ -129,7 +129,7 @@ By observation, the mk2 method seems to be more prone to explore than mk1. This 
 A plausible explanation for the tendency of the mk2 method to explore more is the choice of maximum and minimum values of the pruning probability matrices in the mk2 method, set at 95% and 5%, respectively. This means that even if every member of the elite population shares a connection (or lack of connection) between a given pair of nodes, there is still a 5% chance that any given individual in the next generation will differ.  
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/flyeye.gif">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/flyeye.gif">
 </div>
 <p align="center"><em>mk1 and mk2 elites attempting the swing-up task.</em></p>
 
@@ -148,7 +148,7 @@ This project has a [github repo](https://github.com/riveSunder/synaptolytic-lear
 Failure can be more interesting than success, and more informative to boot. 
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/synaptolysis/swingup_blooper_mk2_agent3.gif">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/swingup_blooper_mk2_agent3.gif">
 </div>
 <p align="center"><em>Policy found by mk2 method by the 4th agent in the elite population at generation 100.</em></p>
     
