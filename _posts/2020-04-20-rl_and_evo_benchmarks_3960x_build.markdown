@@ -6,7 +6,7 @@ categories: RL
 ---
 
 <div align="center">
-<img src="/old_blog/assets/build_a_rl_pc/cloud_dream.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/build_a_rl_pc/cloud_dream.png">
 
 </div>
 <br>
@@ -166,7 +166,7 @@ python3 src/mpi_simple.py -e BipedalWalker-v2 -r 8 -a HebbianDagAgent -n 63 -p 1
 
 ### Benchmark 1: PPO (Implementation from <a href="https://spinningup.openai.com/en/latest/">Spinning Up</a>)
 
-<img src="/old_blog/assets/build_a_rl_pc/spinup_bipedalwalker_gcp_3960x.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/build_a_rl_pc/spinup_bipedalwalker_gcp_3960x.png">
 
 | PPO from Spinning Up (`BipedalWalker-v2`)  | 1000 Epochs  |
 |:--------------------------|-------|
@@ -180,7 +180,7 @@ As we can see in the figure above, the 3960x build is substantially faster than 
 ### Benchmark 2: Synaptolysis
 
 <div align="center">
-<img src="/old_blog/assets/build_a_rl_pc/bipedal_walker_1_1.gif">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/build_a_rl_pc/bipedal_walker_1_1.gif">
 <br>
 <em>Enthusiastic agent</em>
 </div>
@@ -191,7 +191,7 @@ Evolutionary Algorithms are sometimes referred to as <a href="https://en.wikiped
 
 In any case, in this benchmark the performance differences between the self-built PC and the GCP cloud instance were even greater, despite the fact that this algorithm implementation is able to take advantage of all 64 threads on a `n1-highcpu-64` VM.
 
-<img src="/old_blog/assets/build_a_rl_pc/synaptolysis_bipedalwalker_gcp_3960x_1.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/build_a_rl_pc/synaptolysis_bipedalwalker_gcp_3960x_1.png">
 
 | Evolving Pruned Networks (`BipedalWalker-v2`) | 200 Generations | 400 Generations |
 |:--------------------------|-------|-----|
@@ -202,7 +202,7 @@ You'll notice that the fitness metrics are quite different between the 3960x bui
 
 We can see in the second run of the experiment on GCP that training can differ significantly between different runs of the same experiment definition.
 
-<img src="/old_blog/assets/build_a_rl_pc/synaptolysis_bipedalwalker_gcp_3960x_2.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/build_a_rl_pc/synaptolysis_bipedalwalker_gcp_3960x_2.png">
 
 ## Conclusion
 
@@ -225,7 +225,7 @@ There have been a lot of good blog posts about building deep learning computers 
 Most mutations do not improve an organism's fitness and these genetic algorithm training excerpts are no exception.
 
 <div align="center">
-<img src="/old_blog/assets/build_a_rl_pc/bloopers_bipedal_walker_1.gif">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/build_a_rl_pc/bloopers_bipedal_walker_1.gif">
 </div>
 
 

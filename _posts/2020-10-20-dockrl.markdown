@@ -14,7 +14,7 @@ I’m talking, of course, about proteins and their binding partners, known as li
 Take the molecular structure shown below. You’re likely familiar with the substance if not the exact structure and interacting protein.
 
 <div align="center">
-<img src="/old_blog/assets/dockrl/caffeine_a2a.png" width="80%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/dockrl/caffeine_a2a.png" width="80%">
 <br><em>Caffeine (<font color="purple">purple</font>) bound to the A<sub>2A</sub> adenosine receptor (<font color="blue">blue</font>).</em>
 </div>
 <br><br>
@@ -24,7 +24,7 @@ The protein is an adenosine receptor. Different types of adenosine receptor have
 In addition to looking like the world’s smallest ninja turtle, caffeine bears a visual resemblance to adenosine. More importantly, the molecular properties are similar enough to allow caffeine to surreptitiously fill in for adenosine. 
 
 <div align="center">
-<img src="/old_blog/assets/dockrl/adenosine_and_caffeine.png" width="80%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/dockrl/adenosine_and_caffeine.png" width="80%">
 <br><em>If you don't see the resemblance it may be difficult for us to understand one another.</em>
 </div>
 <br><br>
@@ -32,7 +32,7 @@ In addition to looking like the world’s smallest ninja turtle, caffeine bears 
 Normally, adenosine builds up and begins to bind to more and more receptors, which in turn will adopt an active conformation with the most visible change being the shift in the position of the transmembrane helix 6 (H6). Compare the structure of adenosine receptor A2A bound to adenosine below to that of the earlier structure bound to caffeine. 
 
 <div align="center">
-<img src="/old_blog/assets/dockrl/adenosine_a2a.png" width="80%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/dockrl/adenosine_a2a.png" width="80%">
 <br><em>Adenosine bound to the A<sub>2A</sub> receptor. Notice the change in confomration of an extended alpha helix</em>
 </div>
 <br><br>
@@ -52,7 +52,7 @@ Smina uses a default scoring function to evaluate the goodness of fit during doc
 We’ll judge the efficacy of the docking simulation and our custom scoring weights based on the root mean square deviation (RMSD) of ligand position from solved structures of each ligand in complex with its binding partner protein. If the docking simulation software was implemented to be differentiable, we could potentially learn optimal weights directly by back-propagating all the way back from the RMSD through the physics simulation to update our weight parameters. Instead, the docking program operates like a black box or oracle, so the individual impact of changing each weight isn’t directly recoverable from the process. This makes the problem a reasonable candidate for a black box optimization or reinforcement learning formulation, and I’ve wrapped the protein-ligand docking process in an RL environment. This converts the docking score (plus any regularization penalties) to a reward which is then passed to a learning algorithm.  
 
 <div align="center">
-<img src="/old_blog/assets/dockrl/dockrl_overview.png" width="80%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/dockrl/dockrl_overview.png" width="80%">
 <br><em>Docking as a reinforcement learning environment.</em>
 </div>
 <br><br>
@@ -62,7 +62,7 @@ I chose covariant matrix adaptation evolution strategy as my learning algorithm,
 Covariance matrix adaptation evolution strategy (CMA-ES) is a flexible way to efficiently explore parameter space during evolution. CMA-ES follows the typical pattern of evolution strategies: sampling a population from a distribution, evaluating fitness, and finally updating the distribution based on the population’s top performers. CMA-ES is useful because it increases search breadth when the difference between the best performing and the average agents is large. The difference is stark when compared to an evolution strategy with constant variance, shown here finding a peak on the Himmelblau function:
 
 <div align="center">
-<img src="/old_blog/assets/dockrl/himmelblau_es_cmaes.gif" width="80%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/dockrl/himmelblau_es_cmaes.gif" width="80%">
 <br><em>Finding a global maximum on <a href="https://en.wikipedia.org/wiki/Himmelblau%27s_function">Himmelblau's function</a>.</em>
 </div>
 <br><br>
@@ -79,7 +79,7 @@ The CMA-ES optimized parameters usually performed a little better than the defau
 These are the learning curves for the 3 experimental runs: 
 
 <div align="center">
-<img src="/old_blog/assets/dockrl/gen20_training_curves.png" width="80%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/dockrl/gen20_training_curves.png" width="80%">
 <br><em>Learning curves for 3 20-generation training runs. Note the large error bounds around the mean population RMSD, which are standard deviation, for CMA-ES.</em>
 </div>
 <br><br>
@@ -87,7 +87,7 @@ These are the learning curves for the 3 experimental runs:
 And the final evaluation results:
 
 <div align="center">
-<img src="/old_blog/assets/dockrl/gen20_evaluation.png" width="80%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/dockrl/gen20_evaluation.png" width="80%">
 <br><em>Evaluation after 20 generations.</em>
 </div>
 <br><br>

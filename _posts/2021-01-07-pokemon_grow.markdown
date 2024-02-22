@@ -6,7 +6,7 @@ categories: cellular_automata differentiable_programming
 ---
 
 <div align="center">
-<img src="/old_blog/assets/ca/Wilson1900Fig2.jpg" width="100%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/ca/Wilson1900Fig2.jpg" width="100%">
 <br>
 From Wilson, Edmund B. <u>The cell in Development and Inheritance</u> (2nd ed.) 1900. Public Domain from <a href="https://en.wikipedia.org/wiki/Cell_(biology)#/media/File:Wilson1900Fig2.jpg">Wikipedia</a>.
 <br>
@@ -47,7 +47,7 @@ During training input images are subjected to 3 types of perturbation: additive 
 Departing slightly from the training described in (Mordvintsev _et al._ 2020), I use an incremental difficulty that is modulated in keeping with improved CA performance. This is accomplished by increasing the severity of input image perturbations when the model passes a performance threshold, as well as increasing the number of steps. In the beginning, the input image is essentially a slightly noisy version of the target image, and by the end it amounts to a heavily cropped version with substantial noise and missing pixels. You could consider this as an approximation of training from the last few steps at the start, and gradually moving the starting point backward in terms of the number of steps to reach a solution. In my experience so far this helps prevent the CA model from getting stuck in a local minimum (_e.g._ by zeroing out all the cells) from which it doesn't generate a useful error signal sufficient to escape. 
 
 <div align="center">
-<img src="/old_blog/assets/ca/training_perturbations.png" width="90%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/ca/training_perturbations.png" width="90%">
 <br>
 <br>
 <br>
@@ -166,7 +166,7 @@ That's it for the essential functionality of a differentiable cellular automata 
 After training for a while on a PIkachu sprite, a CA model can learn to reproduce a reasonable facsimile of the creature's image based on highly constrained starting conditions.
 
 <div align="center">
-<img src="/old_blog/assets/ca/pikachu_epoch299000_comparison.png">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/ca/pikachu_epoch299000_comparison.png">
 <br>
 <br>
 <br>
@@ -175,7 +175,7 @@ After training for a while on a PIkachu sprite, a CA model can learn to reproduc
 Reconstructing Pikachu necessitates a model that learns how to grow ears, paws, and a tail, all of which are cut off by the truncation perturbation described earlier. It's frankly pretty cool to see it working, but with the capacity for growth comes the capacity for something much more sinister. 
 
 <div align="center">
-<img src="/old_blog/assets/ca/pikachu_explodes_px.gif" width="50%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/ca/pikachu_explodes_px.gif" width="50%">
 <br>
 <br>
 <br>
@@ -186,7 +186,7 @@ Given that we're working with Pikachu here, it should come as no surprise that t
 I've tried a few methods for stabilizing training in growth models, mainly by adding a second sampling protocol for calculating the loss function. Currently this tends to make training unstable and leads to a dead CA universe where all cells eventually fail to meet the requirement to pass information through the alive masking step. While technically a dead universe accomplishes the intended goal of stability, it's hardly desirable. For now we are stuck with a somewhat malignant Pikachu growth model. I am only allowed to come up with one joke a year, and while technically it is now 2021 my humor accountant says I can designate the following figure caption to the 2020 joke year, leaving at least one more gem of comedy gold for you to look forward to from yours truly in 2021. 
 
 <div align="center">
-<img src="/old_blog/assets/ca/pikagoo_3xspeed.gif" width="50%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/ca/pikagoo_3xspeed.gif" width="50%">
 <br>
 <em>In the Pikagoo scenario, out-of-control self-replicating Pikachu cells consume all mass on Earth while building more of themselves. Ranked in the top 10 doomsdays in a survey of "expert" (that's me, I made it up). Here shown running at 3x speed.</em>
 <br>
@@ -197,7 +197,7 @@ I've tried a few methods for stabilizing training in growth models, mainly by ad
 And here's an example of a Pikachu CA rule "infecting" an image of a Snorlax. The Pikachu CA takes hold pretty quickly, so I froze the starting image for the first 8 frames.
 
 <div align="center">
-<img src="/old_blog/assets/ca/infected_snorlax.gif" width="50%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/ca/infected_snorlax.gif" width="50%">
 <br>
 <br>
 <br>
@@ -206,7 +206,7 @@ And here's an example of a Pikachu CA rule "infecting" an image of a Snorlax. Th
 Watching the persistence model for Charizard is decidedly less exciting.
 
 <div align="center">
-<img src="/old_blog/assets/ca/persistent_charizard.gif" width="50%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/ca/persistent_charizard.gif" width="50%">
 <br>
 <br>
 <br>
@@ -215,7 +215,7 @@ Watching the persistence model for Charizard is decidedly less exciting.
 Perhaps the most compelling example is Jigglypuff, for which I trained a set of CA rules for damage recovery. Regrowth/healing CA rules are one of the interesting from a fundamental research perspective (especially if combined with an effective stable growth strategy). It's not too much of an intellectual leap to go from repairing an image to repairing/updating an intelligent agent policy in a changing environment. 
 
 <div align="center">
-<img src="/old_blog/assets/ca/jigglypuff_is_wolverine.gif" width="80%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/ca/jigglypuff_is_wolverine.gif" width="80%">
 <br>
 <br>
 <br>
@@ -226,7 +226,7 @@ The Pokemon CA models described in this essay are each trained on a single sampl
 Anyway, here's Wigglytuff subjected to the Jigglypuff CA (shown at 8x speed) in a poignant visual metaphor of the saying "You can't go home again":
 
 <div align="center">
-<img src="/old_blog/assets/ca/wigglytuff.gif" width="50%">
+<img src="https://raw.githubusercontent.com/riveSunder/old_blog/assets/ca/wigglytuff.gif" width="50%">
 <br>
 <br>
 <br>
