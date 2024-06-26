@@ -47,7 +47,7 @@ I compared 2 variants of the learning by pruning scheme. The first variant (mk1)
 <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/mk1_mutate.png">
 </div>
 
-Where <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/mu_theta.png"> is the mean number of connections in the general population, <img src="/assets/synaptolysis/theta_k.png"> are the parameters for each elite policy <img src="/assets/synaptolysis/k.png">, and <img src="/assets/synaptolysis/K.png"> is the total number of elite agents. The mutation rate is clipped etween 0.1% and 12.5%.
+Where <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/mu_theta.png"> is the mean number of connections in the general population, <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/old_blog/assets/synaptolysis/theta_k.png"> are the parameters for each elite policy <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/k.png">, and <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/K.png"> is the total number of elite agents. The mutation rate is clipped etween 0.1% and 12.5%.
 
 Genetic algorithms often incorporate recombination, where parameters from two or more parents may be swapped to produce variable offspring before mutations are applied. In this iteration of the pruning methods described here no recombination was applied, in part because of the extremely simple single-hidden layer architecture of the networks investigated in this experiment. Another reason I wanted to avoid using recombination was to experiment with purely destructive learning algorithms: a deleterious synaptic loss cannot be recovered for a given agent and it's offspring, although it may be supplanted by the fitter progeny of competing policies retaining the lost connection. I deviate from the purely destructive learning algorith in the second version of the pruning-based learning algorithm. 
 
@@ -65,7 +65,7 @@ A covariance matrix is used to define a distribution from which parameters are s
 <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/sigma_ijkl.png">
 </div>
 
-Where <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/mu.png"> is the mean value for a given weight, <img src="/assets/synaptolysis/theta.png"> is the weight value, and <img src="/assets/synaptolysis/sigma.png"> is the covariance. Subscripts define the connections, for example between nodes <em>i</em> and <em>j</em> and as implied by these subscripts, computing the covariance matrix involves one and two loops wrapping the mean and covariance equations above, respectively.  
+Where <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/mu.png"> is the mean value for a given weight, <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/theta.png"> is the weight value, and <img src="https://raw.githubusercontent.com/riveSunder/old_blog/master/assets/synaptolysis/sigma.png"> is the covariance. Subscripts define the connections, for example between nodes <em>i</em> and <em>j</em> and as implied by these subscripts, computing the covariance matrix involves one and two loops wrapping the mean and covariance equations above, respectively.  
 
 ### Shared Characteristics of all Policies
 
